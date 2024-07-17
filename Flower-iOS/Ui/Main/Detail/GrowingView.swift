@@ -38,13 +38,26 @@ struct GrowingView: View {
                             }
                     )
                 }
-                .padding(.bottom, 35)
+                .frame(height: 40)
                 .padding(.horizontal, 20)
+                .padding(.bottom, 20)
+                
+                Button(action: {
+                    if wight < 1{
+                        wight += 0.03
+                    }else{
+                        wight += 0
+                    }
+                }){
+                    Image("bug")
+                        .padding(.bottom, 35)
+                }
+                Spacer()
             }
             .background(.white)
             .padding(.top, 16)
             .padding(.bottom, 36)
-            Spacer()
+
         }
         .background(Color("back-gray"))
     }
