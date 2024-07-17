@@ -18,10 +18,10 @@ struct HomeView: View {
     
     var goodsList: [Goods] =
     [Goods(iamge: "12", pointCnt: "4", title: "문화상품권 5,000원"),
-     Goods(iamge: "opieo", pointCnt: "4", title: "따릉이 1시간"),
+     Goods(iamge: "opieo", pointCnt: "5", title: "따릉이 1시간"),
      Goods(iamge: "Rectangle 340", pointCnt: "4", title: "햄버거 교환권"),
-     Goods(iamge: "vc", pointCnt: "4", title: "내 정보 수정권"),
-     Goods(iamge: "xcv", pointCnt: "4", title: "도미노 피자"),
+     Goods(iamge: "vc", pointCnt: "1", title: "내 정보 수정권"),
+     Goods(iamge: "xcv", pointCnt: "9", title: "도미노 피자"),
      
     ]
     var body: some View {
@@ -58,7 +58,10 @@ struct HomeView: View {
                         ScrollView(.vertical){
                             LazyVStack{
                                 ForEach(0..<4){index in
-                                    Text(goodsList[index].title)
+                                    GoodsItem(
+                                        title: goodsList[index].title,
+                                        pointCnt: goodsList[index].pointCnt,
+                                        image: goodsList[index].iamge)
                                 }
                             }
                         }
