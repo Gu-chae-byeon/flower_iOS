@@ -22,6 +22,9 @@
 		43BE536B2C47D52200118B9A /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE536A2C47D52200118B9A /* TopNavView.swift */; };
 		43BE536D2C47D6C100118B9A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE536C2C47D6C100118B9A /* LoginView.swift */; };
 		43BE536F2C47DBC700118B9A /* FlowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE536E2C47DBC700118B9A /* FlowExtensions.swift */; };
+		43BE53712C47DDF000118B9A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53702C47DDF000118B9A /* HomeView.swift */; };
+		43BE53732C47DE0800118B9A /* MainTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53722C47DE0800118B9A /* MainTopView.swift */; };
+		43BE53762C47E42B00118B9A /* HomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53752C47E42B00118B9A /* HomeCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		43BE536A2C47D52200118B9A /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
 		43BE536C2C47D6C100118B9A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		43BE536E2C47DBC700118B9A /* FlowExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowExtensions.swift; sourceTree = "<group>"; };
+		43BE53702C47DDF000118B9A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		43BE53722C47DE0800118B9A /* MainTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopView.swift; sourceTree = "<group>"; };
+		43BE53752C47E42B00118B9A /* HomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				43BE535E2C47CE0B00118B9A /* MainView.swift */,
+				43BE53702C47DDF000118B9A /* HomeView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -182,6 +189,8 @@
 				43BE53662C47D3F200118B9A /* CustomFont.swift */,
 				43BE536A2C47D52200118B9A /* TopNavView.swift */,
 				43BE536E2C47DBC700118B9A /* FlowExtensions.swift */,
+				43BE53722C47DE0800118B9A /* MainTopView.swift */,
+				43BE53752C47E42B00118B9A /* HomeCardView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -323,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BE53712C47DDF000118B9A /* HomeView.swift in Sources */,
 				43BE53672C47D3F200118B9A /* CustomFont.swift in Sources */,
 				43BE536D2C47D6C100118B9A /* LoginView.swift in Sources */,
 				43B414962C47C43400860FAA /* OnboardingView.swift in Sources */,
@@ -330,7 +340,9 @@
 				43BE535F2C47CE0B00118B9A /* MainView.swift in Sources */,
 				43B414682C47C40700860FAA /* Flower_iOSApp.swift in Sources */,
 				43BE53622C47D1E800118B9A /* LargeButton.swift in Sources */,
+				43BE53762C47E42B00118B9A /* HomeCardView.swift in Sources */,
 				43BE536F2C47DBC700118B9A /* FlowExtensions.swift in Sources */,
+				43BE53732C47DE0800118B9A /* MainTopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

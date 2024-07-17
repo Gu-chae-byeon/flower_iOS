@@ -30,7 +30,7 @@ struct MainTopView<C: View>: View {
             Button {
                 dismiss()
             } label: {
-                HStack(spacing: 18.29) {
+                HStack(alignment: .center) {
                     if backBtn{
                         Image(systemName: "chevron.left")
                             .resizable()
@@ -45,6 +45,7 @@ struct MainTopView<C: View>: View {
                         Image(image)
                             .padding(.leading, 20)
                             .padding(.trailing, 10)
+
                         Divider()
                             .background(.black)
                         Spacer()
