@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TopNavView<C: View>: View {
     
+    @Flow var flow
     @Environment(\.dismiss) var dismiss
     let title: String
     let content: () -> C
@@ -38,13 +39,15 @@ struct TopNavView<C: View>: View {
             .padding(.horizontal, 15)
             .padding(.vertical, 11)
             content()
-                .frame(maxHeight: .infinity)
+//                .frame(maxHeight: .infinity).background(.red)
         }
     }
 }
 
 #Preview {
-    TopNavView("로그인") {
-        Text("Hi")
+    FlowPreview {
+        TopNavView("로그인") {
+            Text("Hi")
+        }
     }
 }
