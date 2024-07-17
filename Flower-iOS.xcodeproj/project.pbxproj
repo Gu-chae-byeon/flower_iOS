@@ -14,6 +14,7 @@
 		43B414842C47C40700860FAA /* Flower_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B414832C47C40700860FAA /* Flower_iOSUITests.swift */; };
 		43B414862C47C40700860FAA /* Flower_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B414852C47C40700860FAA /* Flower_iOSUITestsLaunchTests.swift */; };
 		43B414962C47C43400860FAA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B414952C47C43400860FAA /* OnboardingView.swift */; };
+		43BE535D2C47CD9200118B9A /* FlowKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43BE535C2C47CD9200118B9A /* FlowKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BE535D2C47CD9200118B9A /* FlowKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +171,9 @@
 			dependencies = (
 			);
 			name = "Flower-iOS";
+			packageProductDependencies = (
+				43BE535C2C47CD9200118B9A /* FlowKit */,
+			);
 			productName = "Flower-iOS";
 			productReference = 43B414642C47C40700860FAA /* Flower-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 43B4145B2C47C40700860FAA;
+			packageReferences = (
+				43BE535B2C47CD9200118B9A /* XCRemoteSwiftPackageReference "FlowKit" */,
+			);
 			productRefGroup = 43B414652C47C40700860FAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -633,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43BE535B2C47CD9200118B9A /* XCRemoteSwiftPackageReference "FlowKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mercen-Lee/FlowKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43BE535C2C47CD9200118B9A /* FlowKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43BE535B2C47CD9200118B9A /* XCRemoteSwiftPackageReference "FlowKit" */;
+			productName = FlowKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43B4145C2C47C40700860FAA /* Project object */;
 }
