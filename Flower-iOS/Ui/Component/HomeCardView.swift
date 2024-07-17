@@ -19,7 +19,7 @@ struct HomeCardView<C: View>: View  {
         VStack{
             HStack{
                 Text(title)
-                    .font(.system(size: 14, weight: .medium))
+                    
                     .foregroundStyle(.gray)
                     .padding(.leading, 12)
                     .padding(.top, 12)
@@ -30,7 +30,8 @@ struct HomeCardView<C: View>: View  {
             }
             Spacer()
             content()
-        }.frame(maxWidth: .infinity, maxHeight: 240)
+        }
+        .background(.white)
     }
 }
 

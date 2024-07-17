@@ -28,7 +28,7 @@ struct MainView: View {
         var content: AnyView {
             switch self {
             case .center: .init(Text("Center"))
-            case .home: .init(Text("Home"))
+            case .home: .init(HomeView())
             case .profile: .init(Text("Profile"))
             }
         }
@@ -38,7 +38,7 @@ struct MainView: View {
         ZStack(alignment: .bottom) {
             ForEach(Menu.allCases, id: \.self) { view in
                 view.content
-                    .safeAreaPadding(80)
+                    .safeAreaPadding(.bottom, 80)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .offset(x: { () -> CGFloat in
                         let cases = Menu.allCases
@@ -80,11 +80,14 @@ struct MainView: View {
                 }
             }
             .frame(height: 80)
+            .background(Color.white)
         }
         .animation(.spring(duration: 0.2), value: currentView)
     }
 }
 
 #Preview {
-    MainView()
+    FlowPreview {
+        MainView()
+    }
 }
