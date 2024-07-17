@@ -9,6 +9,7 @@ import SwiftUI
 import FlowKit
 
 struct OnboardingView: View {
+    @Flow var flow
     
     var body: some View {
         VStack(spacing: 16) {
@@ -21,6 +22,7 @@ struct OnboardingView: View {
                 .font(.customFont(32))
             Spacer()
             LargeButton("로그인") {
+                flow.push(LoginView())
                 
             }
             LargeButton("회원가입", isSecondary: true) {
@@ -33,6 +35,6 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView()
+    FlowPresenter(rootView: OnboardingView())
 
 }
