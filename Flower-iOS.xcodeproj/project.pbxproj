@@ -15,6 +15,11 @@
 		43B414862C47C40700860FAA /* Flower_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B414852C47C40700860FAA /* Flower_iOSUITestsLaunchTests.swift */; };
 		43B414962C47C43400860FAA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B414952C47C43400860FAA /* OnboardingView.swift */; };
 		43BE535D2C47CD9200118B9A /* FlowKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43BE535C2C47CD9200118B9A /* FlowKit */; };
+		43BE535F2C47CE0B00118B9A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE535E2C47CE0B00118B9A /* MainView.swift */; };
+		43BE53622C47D1E800118B9A /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53612C47D1E800118B9A /* LargeButton.swift */; };
+		43BE53652C47D3CF00118B9A /* Yeongdeok-Blueroad.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43BE53642C47D3CF00118B9A /* Yeongdeok-Blueroad.otf */; };
+		43BE53672C47D3F200118B9A /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53662C47D3F200118B9A /* CustomFont.swift */; };
+		43BE536B2C47D52200118B9A /* TopNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE536A2C47D52200118B9A /* TopNavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,12 @@
 		43B414832C47C40700860FAA /* Flower_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower_iOSUITests.swift; sourceTree = "<group>"; };
 		43B414852C47C40700860FAA /* Flower_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43B414952C47C43400860FAA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		43BE535E2C47CE0B00118B9A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		43BE53612C47D1E800118B9A /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		43BE53632C47D3BA00118B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		43BE53642C47D3CF00118B9A /* Yeongdeok-Blueroad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeongdeok-Blueroad.otf"; sourceTree = "<group>"; };
+		43BE53662C47D3F200118B9A /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		43BE536A2C47D52200118B9A /* TopNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +108,8 @@
 		43B414662C47C40700860FAA /* Flower-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				43BE53642C47D3CF00118B9A /* Yeongdeok-Blueroad.otf */,
+				43BE53632C47D3BA00118B9A /* Info.plist */,
 				43B414922C47C40F00860FAA /* Ui */,
 				43B414672C47C40700860FAA /* Flower_iOSApp.swift */,
 				43B4146B2C47C40700860FAA /* Assets.xcassets */,
@@ -134,6 +147,7 @@
 		43B414922C47C40F00860FAA /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				43BE53602C47D1E300118B9A /* Component */,
 				43B414942C47C41F00860FAA /* Main */,
 				43B414932C47C41900860FAA /* Onboarding */,
 			);
@@ -151,8 +165,19 @@
 		43B414942C47C41F00860FAA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				43BE535E2C47CE0B00118B9A /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		43BE53602C47D1E300118B9A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				43BE53612C47D1E800118B9A /* LargeButton.swift */,
+				43BE53662C47D3F200118B9A /* CustomFont.swift */,
+				43BE536A2C47D52200118B9A /* TopNavView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +292,7 @@
 			files = (
 				43B414702C47C40700860FAA /* Preview Assets.xcassets in Resources */,
 				43B4146C2C47C40700860FAA /* Assets.xcassets in Resources */,
+				43BE53652C47D3CF00118B9A /* Yeongdeok-Blueroad.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BE53672C47D3F200118B9A /* CustomFont.swift in Sources */,
 				43B414962C47C43400860FAA /* OnboardingView.swift in Sources */,
+				43BE536B2C47D52200118B9A /* TopNavView.swift in Sources */,
+				43BE535F2C47CE0B00118B9A /* MainView.swift in Sources */,
 				43B414682C47C40700860FAA /* Flower_iOSApp.swift in Sources */,
+				43BE53622C47D1E800118B9A /* LargeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +484,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Flower-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flower-iOS/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -490,6 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Flower-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flower-iOS/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

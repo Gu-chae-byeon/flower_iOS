@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import FlowKit
 
 @main
 struct Flower_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            FlowPresenter(rootView: OnboardingView())
+                .ignoresSafeArea()
         }
     }
 }
