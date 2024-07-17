@@ -43,7 +43,7 @@ struct LoginView: View {
                             .font(.system(size: 14, weight: .medium))
                             .foregroundStyle(.black)
                     }.padding(.leading, 4)
-                    SecureField("비밀번호를 입력해주세요", text: $nameText)
+                    SecureField("비밀번호를 입력해주세요", text: $pwText)
                         .frame(height: 48)
                         .padding(.leading, 12)
                         .background(RoundedRectangle(cornerRadius: 12)

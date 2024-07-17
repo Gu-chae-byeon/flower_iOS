@@ -19,9 +19,9 @@ struct MainView: View {
         
         var icon: Image {
             switch self {
-            case .center: .init(systemName: "flag.fill")
-            case .home: .init(systemName: "house.fill")
-            case .profile: .init(systemName: "person.fill")
+            case .center: .init("Union")
+            case .home: .init("home")
+            case .profile: .init("profile")
             }
         }
         
@@ -61,7 +61,7 @@ struct MainView: View {
                     ZStack {
                         if active {
                             RoundedRectangle(cornerRadius: 12)
-                                .fill(Color.accentColor)
+                                .fill(Color("navColor"))
                                 .matchedGeometryEffect(id: 0, in: animation)
                         }
                         Button {
@@ -69,6 +69,7 @@ struct MainView: View {
                         } label: {
                             VStack(spacing: 7) {
                                 view.icon
+                                    .foregroundColor(active ? .white : .gray)
                                 Text(view.rawValue)
                                     .font(.system(size: 12, weight: .semibold))
                             }
