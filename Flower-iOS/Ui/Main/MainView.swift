@@ -29,7 +29,7 @@ struct MainView: View {
             switch self {
             case .center: .init(MapView())
             case .home: .init(HomeView())
-            case .profile: .init(Text("Profile"))
+            case .profile: .init(Profileview())
             }
         }
     }

@@ -15,7 +15,6 @@ struct MapView: View {
     var body: some View {
         MainTopView("센터 찾기"){
             Map(coordinateRegion: $region)
-
         }
     }
 }

@@ -29,6 +29,11 @@
 		43BE537B2C47EE6C00118B9A /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE537A2C47EE6C00118B9A /* Goods.swift */; };
 		43BE537D2C47F09600118B9A /* GoodsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE537C2C47F09600118B9A /* GoodsItem.swift */; };
 		43BE537F2C47FD0F00118B9A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE537E2C47FD0F00118B9A /* MapView.swift */; };
+		43BE53812C4802FF00118B9A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53802C4802FF00118B9A /* ProfileView.swift */; };
+		43BE53832C480F3D00118B9A /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53822C480F3D00118B9A /* DonateView.swift */; };
+		43BE53852C480F5700118B9A /* ChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53842C480F5700118B9A /* ChangeView.swift */; };
+		43BE53872C4811B500118B9A /* GrowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53862C4811B500118B9A /* GrowingView.swift */; };
+		43BE538A2C481A6500118B9A /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE53892C481A6500118B9A /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,11 @@
 		43BE537A2C47EE6C00118B9A /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
 		43BE537C2C47F09600118B9A /* GoodsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsItem.swift; sourceTree = "<group>"; };
 		43BE537E2C47FD0F00118B9A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		43BE53802C4802FF00118B9A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		43BE53822C480F3D00118B9A /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
+		43BE53842C480F5700118B9A /* ChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeView.swift; sourceTree = "<group>"; };
+		43BE53862C4811B500118B9A /* GrowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingView.swift; sourceTree = "<group>"; };
+		43BE53892C481A6500118B9A /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,9 +195,11 @@
 		43B414942C47C41F00860FAA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				43BE53882C481A5600118B9A /* Detail */,
 				43BE535E2C47CE0B00118B9A /* MainView.swift */,
 				43BE53702C47DDF000118B9A /* HomeView.swift */,
 				43BE537E2C47FD0F00118B9A /* MapView.swift */,
+				43BE53802C4802FF00118B9A /* ProfileView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -213,6 +225,17 @@
 				43BE537A2C47EE6C00118B9A /* Goods.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		43BE53882C481A5600118B9A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				43BE53822C480F3D00118B9A /* DonateView.swift */,
+				43BE53842C480F5700118B9A /* ChangeView.swift */,
+				43BE53862C4811B500118B9A /* GrowingView.swift */,
+				43BE53892C481A6500118B9A /* EditView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,15 +379,20 @@
 				43BE537D2C47F09600118B9A /* GoodsItem.swift in Sources */,
 				43BE53672C47D3F200118B9A /* CustomFont.swift in Sources */,
 				43BE536D2C47D6C100118B9A /* LoginView.swift in Sources */,
+				43BE53852C480F5700118B9A /* ChangeView.swift in Sources */,
 				43B414962C47C43400860FAA /* OnboardingView.swift in Sources */,
+				43BE538A2C481A6500118B9A /* EditView.swift in Sources */,
 				43BE537B2C47EE6C00118B9A /* Goods.swift in Sources */,
 				43BE536B2C47D52200118B9A /* TopNavView.swift in Sources */,
 				43BE537F2C47FD0F00118B9A /* MapView.swift in Sources */,
+				43BE53812C4802FF00118B9A /* ProfileView.swift in Sources */,
 				43BE535F2C47CE0B00118B9A /* MainView.swift in Sources */,
 				43B414682C47C40700860FAA /* Flower_iOSApp.swift in Sources */,
+				43BE53832C480F3D00118B9A /* DonateView.swift in Sources */,
 				43BE53622C47D1E800118B9A /* LargeButton.swift in Sources */,
 				43BE53762C47E42B00118B9A /* HomeCardView.swift in Sources */,
 				43BE536F2C47DBC700118B9A /* FlowExtensions.swift in Sources */,
+				43BE53872C4811B500118B9A /* GrowingView.swift in Sources */,
 				43BE53732C47DE0800118B9A /* MainTopView.swift in Sources */,
 				43BE53792C47E85900118B9A /* Company.swift in Sources */,
 			);

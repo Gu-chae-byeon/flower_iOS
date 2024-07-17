@@ -40,6 +40,7 @@ struct MainTopView<C: View>: View {
                     }
                     Text(title)
                         .font(.system(size: 24, weight: .bold))
+                        .padding(.leading, backBtn ? 8 : 0)
                     Spacer()
                     if image != ""{
                         HStack{
@@ -72,7 +73,7 @@ struct MainTopView<C: View>: View {
 }
 
 #Preview {
-    MainTopView("홈","leaf-green-icon 1","16"){
+    MainTopView("홈","leaf-green-icon 1","16", backBtn: true){
         Text("ㅁㄴㅇㄹ")
         Spacer()
     }
