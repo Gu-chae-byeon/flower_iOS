@@ -27,7 +27,7 @@ struct MainView: View {
         
         var content: AnyView {
             switch self {
-            case .center: .init(Text("Center"))
+            case .center: .init(MapView())
             case .home: .init(HomeView())
             case .profile: .init(Text("Profile"))
             }

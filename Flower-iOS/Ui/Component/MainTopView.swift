@@ -17,7 +17,7 @@ struct MainTopView<C: View>: View {
     let cnt: String
     let backBtn: Bool
     
-    init(_ title: String, _ image: String, _ cnt: String,backBtn: Bool = false, @ViewBuilder content: @escaping () -> C) {
+    init(_ title: String, _ image: String = "", _ cnt: String = "",backBtn: Bool = false, @ViewBuilder content: @escaping () -> C) {
         self.title = title
         self.content = content
         self.image = image
@@ -41,20 +41,22 @@ struct MainTopView<C: View>: View {
                     Text(title)
                         .font(.system(size: 24, weight: .bold))
                     Spacer()
-                    HStack{
-                        Image(image)
-                            .padding(.leading, 20)
-                            .padding(.trailing, 10)
-
-                        Divider()
-                            .background(.black)
-                        Spacer()
-                        Text(cnt)
-                            .padding(.trailing, 20)
+                    if image != ""{
+                        HStack{
+                            Image(image)
+                                .padding(.leading, 20)
+                                .padding(.trailing, 10)
+                            
+                            Divider()
+                                .background(.black)
+                            Spacer()
+                            Text(cnt)
+                                .padding(.trailing, 20)
+                        }
+                        .frame(width: 140, height: 40)
+                        .background(RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(Color.black, lineWidth: 1))
                     }
-                    .frame(width: 140, height: 40)
-                    .background(RoundedRectangle(cornerRadius: 12)
-                        .strokeBorder(Color.black, lineWidth: 1))
                 }
                 .foregroundStyle(Color(.label))
             }
@@ -64,7 +66,7 @@ struct MainTopView<C: View>: View {
             .padding(.bottom, 24)
             .background(.white)
             content()
-//                .frame(maxHeight: .infinity).background(.red)
+            //                .frame(maxHeight: .infinity).background(.red)
         }
     }
 }
