@@ -19,6 +19,8 @@ struct TopNavView<C: View>: View {
         self.content = content
     }
     
+    
+    
     var body: some View {
         VStack(spacing: 0) {
             Button {
